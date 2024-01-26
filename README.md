@@ -1,4 +1,5 @@
-# Linux Tutorials
+# Linux scripts
+    Folder that contains scripts that i've used to automated some kind of task
 
 
 # Linux LVM
