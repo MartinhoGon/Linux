@@ -10,7 +10,7 @@ requests.packages.urllib3.disable_warnings()
 
 hostname="https://localhost:55000"
 
-def loginApi(user='wazuh-wui', password='CmalvaManMoni#2023?%API'):
+def loginApi(user, password):
     url=hostname+"/security/user/authenticate"
     print("Getting Token...")
     params = {
@@ -75,11 +75,10 @@ def upgradeAgents(token, agentList):
 
 print("Upgrade wazuh agents")
 
-#apiUser = input('API user: ')
-#apiPass = getpass('Api Password: ')
+apiUser = input('API user: ')
+apiPass = getpass('Api Password: ')
 
-#token = loginApi(apiUser, apiPass)
-token = loginApi()
+token = loginApi(apiUser, apiPass)
 if token == 0:
     exit()
 
