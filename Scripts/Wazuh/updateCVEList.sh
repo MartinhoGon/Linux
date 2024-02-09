@@ -1,5 +1,10 @@
 #!/bin/bash
 
+########################################
+##   Developed By Martinho Gonçalves  ##
+##             26/01/2024             ##
+########################################
+
 linuxVersion=('trusty' 'xenial' 'bionic' 'focal' 'jammy')
 destinationFolder='/home/administrador/wazuh-docker/single-node/canonical_ovals'
 
